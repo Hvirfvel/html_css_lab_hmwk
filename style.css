@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    margin: 0;
+    padding: 10px;
+    font-family: 'Playfair Display';
+}
+
+a {
+    text-decoration: none;
+}
+
+#top-header {
+    background-color: rgb(138, 172, 151);
+    height: 80px;
+    display: flex;
+}
+
+#top-header ul {
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.top-nav-list-items a {
+    color: rgb(15, 15, 15);
+}
+
