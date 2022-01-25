@@ -1,12 +1,19 @@
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
 body {
     margin: 0;
-    box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(231, 236, 234);
 }
 
 h1 {
     margin: 0;
-    padding: 10px;
+    color: rgb(11, 51, 32);
     font-family: 'Playfair Display';
 }
 
@@ -15,8 +22,15 @@ a {
 }
 
 #top-header {
-    background-color: rgb(138, 172, 151);
     height: 80px;
+    padding: 0 50px;
+    background-color: rgb(138, 172, 151);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#top-header nav {
     display: flex;
 }
 
@@ -27,7 +41,122 @@ a {
     list-style: none;
 }
 
-.top-nav-list-items a {
-    color: rgb(15, 15, 15);
+li a {
+    color: rgb(1, 15, 3);
+}
+
+main {
+    padding: 0 5%;
+}
+
+#top-content {
+    margin-bottom: 30px;
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+#login-categories, #login-section, #login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#login-form input {
+    width: 200px;
+}
+
+#login-form input.submit-button, .submit-button {
+    width: min-content;
+    margin-top: 10px;
+    padding: 2px 10px;
+}
+
+aside {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: whitesmoke;
+}
+
+aside, #latest-news {
+    border-top: 8px solid tomato;
+}
+
+aside h2 {
+    margin: 0;
+}
+
+#latest-news {
+    margin-left: 50px;
+    padding-left: 20px;
+    background-color: whitesmoke;
+}
+
+.news-story {
+    display: flex;
+    flex-direction: row;
+    margin: 15px 0;
+}
+
+.news-story-text {
+    width: 500px;
+    padding: 5px 10px;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#article-main {
+    padding: 20px;
+    background-color: whitesmoke;
+}
+
+#article-main, #comment-section h2, #comment-form, #comment-section section {
+    max-width: 1020px;
+    min-width: 700px;
+}
+
+#comment-section {
+    max-width: 1020px;
+}
+
+#comment-form {
+    min-width: 700px;
+    display: flex;
+    flex-direction: column;
+}
+
+.user-comment {
+    margin: 10px 0;
+    padding: 15px;
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+}
+
+.user-comment h2 {
+    margin-top: 0;
+}
+
+#comment-section img {
+    width: auto;
+    height: 80px;
+    margin-right: 25px;
+}
+
+footer {
+    height: 40px;
+    margin-top: 50px;
+    background-color: rgb(175, 153, 175);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer h2 {
+    margin: 0;
+    font-size: 14px;
 }
 

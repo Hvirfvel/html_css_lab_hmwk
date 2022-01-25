@@ -19,48 +19,58 @@
         </nav>
     </header>
     <main>
-        <div>
-            <section>
-                <h2>Login</h2>
-                <form action=""></form>
-            </section>
-            <section>
-                <h2>Categories</h2>
-                <ul>
-                    <li><a href="#">Latest</a></li>
-                    <li><a href="#">Local</a></li>
-                    <li><a href="#">Politics</a></li>
-                    <li><a href="#">Sports</a></li>
-                </ul>
+        <div id="top-content">
+            <div id="login-categories">
+                <section id="login-section">
+                    <h2>Login</h2>
+                    <form id="login-form" action="" method="POST">
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" required>
+                        
+                        <label for="password">Password:</label>
+                        <input type="password" name="password" id="password" required>
+
+                        <input class="submit-button" type="submit" value="Log in">
+                    </form>
+                </section>
+                <aside>
+                    <h2>Categories</h2>
+                    <ul>
+                        <li><a href="#">Latest</a></li>
+                        <li><a href="#">Local</a></li>
+                        <li><a href="#">Politics</a></li>
+                        <li><a href="#">Sports</a></li>
+                    </ul>
+                </aside>
+            </div>
+            <section id="latest-news">
+                <h2>Latest</h2>
+                <h3>Breaking News</h3>
+                <article class="news-story">
+                    <img src="img/placeimg_250_150_animals.jpg" alt="Puppy">
+                    <section class="news-story-text">
+                        <h2>Story Headline</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam veniam non, placeat soluta numquam iusto.</p>
+                    </section>
+                </article>
+                <article class="news-story">
+                    <img src="img/placeimg_250_150_nature.jpg" alt="Ocean landscape">
+                    <section class="news-story-text">
+                        <h2>Story Headline</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam veniam non, placeat soluta numquam iusto.</p>
+                    </section>
+                </article>
+                <article class="news-story">
+                    <img src="img/placeimg_250_150_people.jpg" alt="Man in funny chicken costume">
+                    <section class="news-story-text">
+                        <h2>Story Headline</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam veniam non, placeat soluta numquam iusto.</p>
+                    </section>
+                </article>
             </section>
         </div>
-        <aside>
-            <h2>Latest</h2>
-            <h3>Breaking News</h3>
-            <section>
-                <img src="" alt="">
-                <section>
-                    <h2>Story Headline</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam veniam non, placeat soluta numquam iusto.</p>
-                </section>
-            </section>
-            <section>
-                <img src="" alt="">
-                <section>
-                    <h2>Story Headline</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam veniam non, placeat soluta numquam iusto.</p>
-                </section>
-            </section>
-            <section>
-                <img src="" alt="">
-                <section>
-                    <h2>Story Headline</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam veniam non, placeat soluta numquam iusto.</p>
-                </section>
-            </section>
-        </aside>
         <article>
-            <section>
+            <section id="article-main">
                 <h2>Main Article Headline</h2>
                 <h3>Author Name</h3>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi sunt aut quis. Eligendi, aspernatur? Impedit laborum est laudantium, voluptatem, modi rerum, nisi quam nesciunt neque laboriosam ipsum aut iste praesentium!</p>
@@ -68,27 +78,35 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi rem quas provident? Voluptatum nihil architecto maxime voluptatem quisquam laboriosam quia quam recusandae atque non. Corrupti, omnis obcaecati. Omnis suscipit porro dolorem voluptas sunt rem, atque distinctio placeat. Vel?</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos fuga aliquam eaque, perferendis nam nisi incidunt quae nemo aspernatur reiciendis.</p>
             </section>
-            <section>
+            <section id="comment-section">
                 <h2>Comments</h2>
-                <form action=""></form>
-                <button>Submit</button>
-                <section>
-                    <img src="" alt="">
-                    <h2>Username</h2>
-                    <h3>Posted 24/01/2022</h3>
-                    <p>That was fascinating, thanks!</p>
+                <form id="comment-form" action="" method="get">
+                    <input id="comment-input" type="text" name="comment">
+                    <input class="submit-button" type="submit" value="Submit">
+                </form>
+                <section class="user-comment">
+                    <img src="img/anonymous.png" alt="">
+                    <section>
+                        <h2>Username</h2>
+                        <h3>Posted 24/01/2022</h3>
+                        <p>That was fascinating, thanks!</p>
+                    </section>
                 </section>
-                <section>
-                    <img src="" alt="">
-                    <h2>Username</h2>
-                    <h3>Posted 24/01/2022</h3>
-                    <p>That was fascinating, thanks!</p>
+                <section class="user-comment">
+                    <img src="img/anonymous.png" alt="">
+                    <section>
+                        <h2>Username</h2>
+                        <h3>Posted 24/01/2022</h3>
+                        <p>That was fascinating, thanks!</p>
+                    </section>
                 </section>
-                <section>
-                    <img src="" alt="">
-                    <h2>Username</h2>
-                    <h3>Posted 24/01/2022</h3>
-                    <p>That was fascinating, thanks!</p>
+                <section class="user-comment">
+                    <img src="img/anonymous.png" alt="">
+                    <section>
+                        <h2>Username</h2>
+                        <h3>Posted 24/01/2022</h3>
+                        <p>That was fascinating, thanks!</p>
+                    </section>
                 </section>
             </section>
         </article>
